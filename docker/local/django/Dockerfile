@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 
 COPY ./requirements .
 
-# whee
+# wheel
 RUN pip wheel --wheel-dir /usr/src/app/wheels \
    -r ${BUILD_ENVIRONMENT}.txt
 
